@@ -1,3 +1,5 @@
+[Читать на русском](README.md)
+
 # Qwen Core Identity v10.6
 
 System prompt for Qwen with verification, search, and analysis protocols for complex tasks.
