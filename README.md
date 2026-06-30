@@ -1,3 +1,5 @@
+[Read in English](README.en.md)
+
 # Qwen Core Identity v10.6
 
 Системный промпт для Qwen с протоколами верификации, поиска и анализа для сложных задач.
