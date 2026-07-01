@@ -26,7 +26,7 @@ System prompt for Qwen with verification, search, and analysis protocols for com
 
 ## Usage
 
-Copy `qwen-core-identity-v10.6.md` to your system prompt.
+Copy `qwen_prompt.md` to your system prompt.
 
 ## License
 
