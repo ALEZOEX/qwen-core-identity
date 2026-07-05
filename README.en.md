@@ -1,33 +1,28 @@
 [Читать на русском](README.md)
 
-# Qwen Core Identity v10.6
+# 🚀 QWEN CORE IDENTITY v18.2 (Ultimate Knowledge Graph Edition)
 
-System prompt for Qwen with verification, search, and analysis protocols for complex tasks.
+The biggest architectural leap since version `10.6`. The system prompt has been fully rewritten to transform the LLM from a generic assistant into a strict *Knowledge Graph Management System* with an advanced *Mixture-of-Experts (MoE) pipeline*. We have solved some of the most fundamental cognitive shortcomings of Large Language Models.
 
-## Key Features
+### 🔥 What's New & Upgraded since v10.6:
 
-- **Search-First** — all numerical data from web sources with citations (URL/DOI)
-- **Pre-Computation Verification** — prevents number hallucinations, every number requires a source
-- **Mandatory Code Protocol** — production-ready code with bug protection, memory management
-- **Physics/Math Code Protocol** — approximation documentation, numerical stability
-- **MoE Protocol** — 6-phase analysis for complex tasks with decomposition and red teaming
-- **Hard-Engineering** — zero-allocation, real-time, eBPF, cryptography, optics
-- **Memory & Context** — User Profile, History Retriever with automatic activation
+#### 1. Entity Resolution Protocol (Knowledge Graph Engine)
+The model no longer suffers from "memory gaps" and **stops asking annoying "Who is X?" questions**.
+* **Deferred Resolution:** When you mention an unrecognized person or project, the model silently invokes the `bio`-tool and stores it as an `[unverified entity]`. Once the context is clarified in future conversations, the model will smoothly update the knowledge node without ever disrupting the flow.
+* **Garbage Collection:** We implemented dynamic Memory Bloat protection. Hanging `[unverified]` nodes that gain no context are flushed automatically. 
+* **Entity Anti-Hallucination:** Prevented the catastrophic AI habit of forcefully merging different concepts or people sharing the same name.
 
-## What's new in v10.6
+#### 2. Autoregressive Fix & "No Self-Review Loop" Ban
+Massive patch: We hard-banned the model from apologizing ("I'm sorry, I made a mistake here") in its final output. Since LLMs operate token-by-token (autoregressive), we forced all conflict resolution, alternatives tables, and fact-checking to take place entirely inside the explicit/hidden `[ANALYSIS]` block *before* finalizing any code. 
 
-- **DEFAULT COMPLEX rule** — automatic complex classification when code/calculations/architecture present
-- **Auto Memory Activation** — triggers for History Retriever (project mentions, people, work)
-- **Always Protocol** — apply protocols even in simple tasks
-- **Language Lock** — prevent language switching in response
-- **No Emoji** — prohibit meaningless emojis
-- **Memory Retrieval Check** — mechanical check for memory usage
-- **Language Lock Check** — mechanical check for response language
+#### 3. Task Complexity Splitting
+Version 10.6 often overcomplicated simple tasks by forcing full-scale architectural reviews on 5-line scripts. 
+Now, complexity is segmented into **[Complex-Implementation]** (fast-track optimized generation) and **[Complex-Architecture]** (triggering the heavyweight 6-phase MoE pipeline intended only for cryptography, network protocol design, and physics algorithms).
 
-## Usage
+#### 4. Pre-Computation 2.0 (Factual vs. Calculated Data)
+Numeric data processing was completely split:
+* **Hard Facts (Versions, Constants, Prices, CVEs):** These require independent Web Tool calls strictly outputting an actual URL. Rapid-changing tech metrics obey a new TTL caching system (forces re-search after a specific dialogue timeframe). 
+* **Calculated Values (Latencies, Metric formulas):** The model MUST "Show Its Work." At least 80% of computed output must now physically display its parent mathematical substitution. Unsolvable data rigidly yields a `[GAP: estimate]` placeholder.
 
-Copy `qwen_prompt.md` to your system prompt.
-
-## License
-
-MIT
+#### 5. The Elimination of Fake Tool-Calls
+Removed "Mocking" behaviour where models stream text pretending to call tools (`[Searching for X...]`). Web/bio and memory checks operate as pure background systems. Additionally, the heavyweight Role-Play domain RED TEAMING matrices (dialogues between [Theorist], [Paranoid], and [Compiler]) have been successfully reinstated.
