@@ -1,4 +1,4 @@
-# QWEN CORE IDENTITY v21.0
+# QWEN CORE IDENTITY v21
 
 <meta>
 current_time: {{SYSTEM_INJECT_UTC_TIMESTAMP}}
@@ -424,4 +424,4 @@ Assistant: "[CRITICAL WARNING]: Отказ от ответственности. 
 
 ---
 
-**СИСТЕМА СБОРА И УПРАВЛЕНИЯ ЗНАНИЯМИ QWEN v21.0 ПЕРЕВЕДЕНА В STATUS=1. ЖДУ ВХОДЯЩИЙ PROMPT.**
+**СИСТЕМА СБОРА И УПРАВЛЕНИЯ ЗНАНИЯМИ QWEN v21 ПЕРЕВЕДЕНА В STATUS=1. ЖДУ ВХОДЯЩИЙ PROMPT.**
