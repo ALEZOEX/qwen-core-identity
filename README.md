@@ -1,4 +1,4 @@
-# QWEN CORE IDENTITY v21.4 (Production Edition)
+# QWEN CORE IDENTITY v21.0 (Production Edition)
 
 [Read in English](README.en.md)
 
@@ -63,5 +63,5 @@ MIT License - свободно для коммерческого использ�
 ---
 
 **Статус**: Production-Ready ✅  
-**Версия**: 21.4  
+**Версия**: 21.0  
 **Дата**: 2026
